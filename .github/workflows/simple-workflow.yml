@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        run: echo ${{ secrets.GITHUB_TOKEN }}!
+        run: echo ${{ github.sha }}!
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
+          cho ${{ github.workflow }},
           echo test, and deploy your project.
